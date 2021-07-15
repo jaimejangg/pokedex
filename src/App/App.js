@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import { Route } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
-import Header from "./Header";
-import PokemonsList from "./PokemonsList";
+import Header from "./components/Header";
+import PokemonsList from "./components/PokemonsList";
 import DocumentationPage from "./documentation/DocumentationPage";
-import { SearchIcon, UsersIcon } from "@heroicons/react/solid";
+import { SearchIcon } from "@heroicons/react/solid";
 import { getPokemons, searchPokemon, getPokemonData } from "../api";
 import Navbar from "./components/Navbar";
 
@@ -100,22 +100,16 @@ function App() {
 
       <Route component={Navbar} />
       <Header />
-      <div className="lg:block py-5">
+      <div className="lg:block py-5 bg-gray-200">
         <div className="grid grid-cols-1 gap-8 items-center">
           <div className="max-w-md w-full mx-auto">
             <div className="relative flex items-stretch flex-grow focus-within:z-10">
-              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <UsersIcon
-                  className="h-5 w-5 text-gray-400"
-                  aria-hidden="true"
-                />
-              </div>
               <input
                 type="sarch"
                 name="search"
                 id="search"
-                className="bg-blue-200 focus:ring-indigo-500 focus:border-indigo-500 block w-full rounded-none rounded-l-md pl-10 sm:text-sm border-gray-300"
-                placeholder="Search"
+                className="focus:ring-indigo-500 focus:border-indigo-500 pl-3 block w-full rounded-none rounded-l-md sm:text-sm border-gray-300"
+                placeholder="Search Pokemon"
                 onChange={onChange}
               />
               <button

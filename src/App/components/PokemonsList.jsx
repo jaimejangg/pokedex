@@ -1,5 +1,5 @@
 import CardPokemon from "./CardPokemon";
-import Pagination from "./components/Pagination";
+import Pagination from "./Pagination";
 
 export default function PokemonsList({
   pokemons,
@@ -19,7 +19,7 @@ export default function PokemonsList({
   };
 
   return (
-    <div className="min-h-full">
+    <div className="min-h-full bg-gray-200">
       <>
         <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
           <div className="space-y-12">

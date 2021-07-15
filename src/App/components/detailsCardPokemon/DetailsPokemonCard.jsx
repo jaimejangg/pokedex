@@ -1,6 +1,6 @@
 import { useState } from "react";
-import pokeImage from "../assets/images/pokeball.png";
-import Switch from "./components/detailsCardPokemon/Switch";
+import pokeImage from "../../../assets/images/pokeball.png";
+import Switch from "./Switch";
 import {
   Radar,
   RadarChart,
@@ -52,7 +52,7 @@ export default function DeatilsPokemonCard({ pokemon }) {
           {pokemon.types.map((type) => (
             <span
               key={type.type.name}
-              className="inline-flex my-1 items-center px-3 py-0.5 rounded mx-1 text-sm font-medium bg-green-100 text-green-800"
+              className="inline-flex my-1 items-center px-3 py-0.5 rounded mx-1 text-sm font-medium bg-indigo-100 text-indigo-800"
             >
               {type.type.name}
             </span>
@@ -77,20 +77,20 @@ export default function DeatilsPokemonCard({ pokemon }) {
                     <div className="relative pt-1" key={stat.stat.name}>
                       <div className="flex mb-2 items-center justify-between">
                         <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200">
+                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-indigo-600 bg-indigo-200">
                             {stat.stat.name}
                           </span>
                         </div>
                         <div className="text-right">
-                          <span className="text-xs font-semibold inline-block text-pink-600">
+                          <span className="text-xs font-semibold inline-block text-indigo-600">
                             {stat.base_stat}%
                           </span>
                         </div>
                       </div>
-                      <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-pink-200">
+                      <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-indigo-200">
                         <div
                           style={{ width: `${stat.base_stat}%` }}
-                          className="shadow - none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"
+                          className="shadow - none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500"
                         ></div>
                       </div>
                     </div>

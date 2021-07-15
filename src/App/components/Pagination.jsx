@@ -1,7 +1,7 @@
 export default function Pagination({ page, totalPages, nextPage, prevPage }) {
   return (
     <nav
-      className="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6"
+      className="bg-gray-200 px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6"
       aria-label="Pagination"
     >
       <div className="hidden sm:block">
@@ -18,7 +18,7 @@ export default function Pagination({ page, totalPages, nextPage, prevPage }) {
           Previous
         </button>
         {totalPages === 1 && (
-          <span className="inline-flex items-center px-3 py-0.5 rounded ml-3 text-sm font-medium bg-blue-100 text-blue-800">
+          <span className="inline-flex items-center px-3 py-0.5 rounded ml-3 text-sm font-medium bg-blue-100 text-indigo-800">
             Just one beautiful pokemon.
           </span>
         )}

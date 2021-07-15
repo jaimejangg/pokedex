@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 export default function DocumentationPage() {
   const history = useHistory();
   return (
-    <div className="bg-white overflow-hidden">
+    <div className="overflow-hidden bg-white">
       <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <button
           type="button"
@@ -18,10 +18,10 @@ export default function DocumentationPage() {
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
             <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
-              Case Study
+              Documenation of the challenge.
             </h2>
             <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Meet Whitney
+              Pokedex
             </h3>
           </div>
         </div>
@@ -76,61 +76,57 @@ export default function DocumentationPage() {
                     className="flex-none w-5 h-5 text-gray-400"
                     aria-hidden="true"
                   />
-                  <span className="ml-2">Photograph by Marcus O’Leary</span>
+                  <span className="ml-2">Jaime Rueda</span>
                 </figcaption>
               </figure>
             </div>
           </div>
           <div className="mt-8 lg:mt-0">
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
-              <p className="text-lg text-gray-500">
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
-              </p>
+              <p className="text-lg text-gray-500"></p>
             </div>
             <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>
-                Sollicitudin tristique eros erat odio sed vitae, consequat
-                turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros
-                eu viverra donec ut volutpat donec laoreet quam urna.
+                The project had some challenges that it had to face and I would
+                like to share it with you, although it is not completely
+                finished, some details are missing, the functionality works
+                well.
               </p>
               <p>
-                Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique
-                sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et
-                et et sit. Faucibus sed non gravida lectus dignissim imperdiet
-                a.
+                the time was not enough to finish it as I wanted, I could have
+                detailed the ux and ui to make it look better, also the biggest
+                challenge was testing, to be honest I did not reach the goal
+                with the given time since I had problems converting the data
+                from the poke api for the unit testing of the components,
+                specifically with a jest method called jest.mock, I would need
+                more time to study and solve it but I needed to deliver the mvp.
               </p>
-              <p>
-                Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem
-                arcu, metus, egestas netus cursus. In.
-              </p>
+              <p>Some of the interesting technologies that I used:</p>
               <ul>
-                <li>Quis elit egestas venenatis mattis dignissim.</li>
+                <li>React, i used local state with hooks.</li>
+                <li>Poke api for the data and Tailwind CSS for styles.</li>
                 <li>
-                  Cras cras lobortis vitae vivamus ultricies facilisis tempus.
+                  some libraries that helped me for the project such as react
+                  router, recharts, react toastify ...
                 </li>
-                <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
               </ul>
               <p>
-                Rhoncus nisl, libero egestas diam fermentum dui. At quis
-                tincidunt vel ultricies. Vulputate aliquet velit faucibus
-                semper. Pellentesque in venenatis vestibulum consectetur nibh
-                id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
-                fermentum lacus in. Viverra.
+                It is important for me to mention that when reading the code,
+                tailwind can be a bit confusing if you are not familiar, but
+                once you understand it it is very easy to understand and work
+                quickly.
               </p>
-              <h3>How we helped</h3>
+              <h3>Notes</h3>
               <p>
-                Tincidunt integer commodo, cursus etiam aliquam neque, et.
-                Consectetur pretium in volutpat, diam. Montes, magna cursus
-                nulla feugiat dignissim id lobortis amet. Laoreet sem est
-                phasellus eu proin massa, lectus. Diam rutrum posuere donec
-                ultricies non morbi. Mi a platea auctor mi.
+                Without more to say I hope you like my work and can consider me
+                otherwise I would greatly appreciate your feedback for my growth
+                as a professional, I am not a person who gives up so you can
+                expect from my hard and honest work in addition to continuous
+                learning for tomorrow's troubles.
               </p>
               <p>
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
+                Have a good day and thank you for the chance regardless of the
+                result. -Be Always grateful.
               </p>
             </div>
           </div>
